@@ -1,6 +1,7 @@
 <template>
   <div class="div-mine">
       <h1>我的</h1>
+      <h2>{{this.$store.state.month}}</h2>
       <tabbar/>
   </div>
 </template>
@@ -17,4 +18,4 @@ import tabbar from '@/components/content/main-tabbar'
 
 <style lang="less" scoped>
 
-</style>>
+</style>

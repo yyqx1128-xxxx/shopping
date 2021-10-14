@@ -1,5 +1,5 @@
 <template>
-   <navTab>
+   <navTab class="nav-tab">
       <tabItem path="/views/home" activeColor="#00E6BF">
         <img slot="item-icon" src='@/assets/img/tabbar/tab-home-icon.png'/>
         <img slot="item-icon-active" src='@/assets/img/tabbar/tab-home-light-icon.png'/>
@@ -37,5 +37,4 @@
 </script>
 
 <style scoped>
-
 </style>

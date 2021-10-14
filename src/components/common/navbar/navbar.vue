@@ -1,16 +1,21 @@
 <template>
+<div>
   <div class="nav-bar">
       <div class="nav-left">
-        <slot name="nav-left"></slot>
+        <slot name="left"></slot>
       </div>
       <div class="nav-center">
-        <slot name="nav-center"></slot>
+        <slot name="center"></slot>
       </div>
       <div class="nav-right">
-        <slot name="nav-right"></slot>
+        <slot name="right"></slot>
       </div>
-      
   </div>
+  <div>
+    <slot name="navheaderbottom"></slot>
+  </div>
+</div>
+  
 </template>
 
 <script>
@@ -24,6 +29,14 @@
 
 <style lang="less">
     .nav-bar{
+      position: relative;
+      top: 0;
+      width: 100vw;
+      // position: fixed;
+      // left: 0;
+      // top: 0;
+      // right: 0;
+      // z-index: 9;
         display: flex;
         line-height: 44px;
         text-align: center;
